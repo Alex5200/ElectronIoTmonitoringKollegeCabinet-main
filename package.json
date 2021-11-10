@@ -1,0 +1,61 @@
+{
+  "name": "electron-College-PR",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "public/main.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scrsipts eject",
+    "start-e": "electron .",
+    "dist": "electron-builder --win",
+    "se": "react-scripts start && wait-on tcp:3000 && electron .",
+    "electrons": "wait-on tcp:3000 && electron .",
+    "dev": "concurrently -k \"BROWSER=edge npm start\" \"npm:electron\""
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "concurrently": "^6.3.0",
+    "electron": "^15.3.0",
+    "wait-on": "^6.0.0",
+    "react": "^17.0.2",
+    "electron-builder": "^22.13.1"
+
+  },
+  "dependencies": {
+    "@babel/core": "7.16.0",
+    "@emotion/react": "11.5.0",
+    "@emotion/styled": "11.3.0",
+    "@mui/icons-material": "5.1.0",
+    "@mui/material": "5.1.0",
+    "@mui/system": "^5.1.0",
+    "@types/react": "17.0.34",
+    "electron-builder": "^22.13.1",
+    "fs": "0.0.1-security",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
