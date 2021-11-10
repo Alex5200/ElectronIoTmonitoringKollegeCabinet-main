@@ -30,7 +30,6 @@
     "wait-on": "^6.0.0",
     "react": "^17.0.2",
     "electron-builder": "^22.13.1"
-
   },
   "dependencies": {
     "@babel/core": "7.16.0",
